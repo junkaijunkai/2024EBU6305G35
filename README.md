@@ -1,5 +1,5 @@
 ## Group Number: 2024EBU6305G35
-## Project Title:
+## Project Title: Movie Hub
 ## Members:
 Junkai Zhang, 2021212661, 210977394, jp2021212661@qmul.ac.uk<br>
 Xiaofei Li,   2021212657, 210977350, jp2021212657@qmul.ac.uk<br>
