@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieHub - User Profile</title>
+  <style>
+    /* 添加样式和布局 */
+    /* 这里只是一个简单的示例，你可以根据自己的喜好进行样式设计 */
+    /* 以下是一个基本的CSS样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MovieHub - User Profile</h1>
+  </header>
+  
+  <form>
+    <h2>User Profile</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+    
+    <label for="avatar">Avatar:</label>
+    <input type="file" id="avatar" name="avatar">
+    
+    <h2>Change Password</h2>
+    <label for="current_password">Current Password:</label>
+    <input type="password" id="current_password" name="current_password" required>
+    
+    <label for="new_password">New Password:</label>
+    <input type="password" id="new_password" name="new_password" required>
+    
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    
+    <input type="submit" value="Save Changes">
+  </form>
+</body>
+</html>
