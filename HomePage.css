@@ -1,0 +1,117 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    position: relative;
+}
+
+.menu-button {
+    cursor: pointer;
+    position:absolute;
+    left: 20px;
+    margin-right: auto; /* 将按钮推向左侧 */
+}
+
+.home-button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.top-tab{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.tab-link{
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.tab-link:active{
+    background-color: #ccc;
+}
+.home-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 20px 10px;
+}
+
+.section{
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 10px;
+}
+
+.section-header{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin: 0;
+    flex-grow: 1; /* 确保标题占据剩余空间 */
+}
+
+.more-button {
+    margin-left: auto;
+    cursor: pointer;
+}
+.more-button:active{
+    background-color: #ccc;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-control.left {
+    left: 0;
+    font-size: 32px;
+}
+.carousel-control.right {
+    right: 0;
+    font-size: 32px;
+}
+.carousel-control:hover{
+    color: black;
+}
+
+.image-container{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.image-container img {
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+}
+.image-container img:first-child{
+    margin-left: 0;
+}

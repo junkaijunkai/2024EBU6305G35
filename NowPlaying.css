@@ -1,0 +1,56 @@
+body {
+    margin:0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    position: relative;
+}
+.home-button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.return-button{
+    cursor: pointer;
+    position:absolute;
+    left: 20px;
+    margin-right: auto;
+}
+.top{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.playing-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.playing{
+    display: flex;
+    background-color: rgb(233,233,233);
+    margin-bottom: 20px;
+}
+.poster{
+    height: 243px;
+    width: 162px;
+    background-size: contain;
+    border:none;
+    cursor: pointer;
+}
+.poster:active{
+    box-shadow: 0 5px #ccc;
+}
+.playing-information{
+    padding-left: 20px;
+}
