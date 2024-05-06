@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ececec;
+        }
+
+        .top-bar {
+            background-color: #000;
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-button {
+            align-self: flex-start;
+            margin-left: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1em;
+            padding: 5px 0;
+        }
+
+        .nav-link.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .content-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px; /* Adjust the max-width to fit your design */
+            margin: auto;
+        }
+
+        .content-block {
+            width: calc(33.333% - 20px); /* Subtract margin */
+            margin-bottom: 30px; /* Space between rows */
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .content-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-block-title {
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+        /* Ensure that there are no margins on the sides of the first and last blocks */
+        .content-block:nth-child(3n+1) { margin-left: 0; }
+        .content-block:nth-child(3n+3) { margin-right: 0; }
+       
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="menu-button">Menu</div>
+        <div class="logo">MovieHub</div>
+        <div class="navigation-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="toplist.html" class="nav-link active">Top-list</a>
+            <a href="personal.html" class="nav-link">Personal</a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="content-area">
+            <!-- Content blocks with images and titles -->
+            <a href="real-time-hot-movies.html" class="content-block">
+                <img src="images/坠落.jpg" alt="Real-Time Hot Movies">
+                <div class="content-block-title">Real-Time Hot Movies</div>
+            </a>
+            <a href="tv-shows.html" class="content-block">
+                <img src="images/不够善良的我们.jpg" alt="TV Shows">
+                <div class="content-block-title">TV Shows</div>
+            </a>
+            <a href="all-time-movie-rankings.html" class="content-block">
+                <img src="images/肖申克.jpg" alt="All-Time Movie Rankings">
+                <div class="content-block-title">All-Time Movie Rankings</div>
+            </a>
+        
+            <a href="top-score-comedy-list.html" class="content-block">
+                <img src="images/大话西游.jpg" alt="Top Score Comedy List">
+                <div class="content-block-title">Top Score Comedy List</div>
+            </a>
+            <a href="top-score-action-movie-list.html" class="content-block">
+                <img src="images/蝙蝠侠.jpg" alt="Top Score Action Movie List">
+                <div class="content-block-title">Top Score Action Movie List</div>
+            </a>
+            <a href="top-score-romantic-movie-list.html" class="content-block">
+                <img src="images/泰坦尼克.jpg" alt="Top Score Romantic Movie List">
+                <div class="content-block-title">Top Score Romantic Movie List</div>
+            </a>
+        
+    </div>
+</body>
+</html>
