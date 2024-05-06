@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Hot Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        #introduction {
+            width: 800px;
+            height: 200px;
+            background-color: #040404;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #introduction h1 {
+            font-size: 24px;
+            color: #fdfbfb;
+            margin-bottom: 10px;
+        }
+        #introduction p {
+            font-size: 20px;
+            color: #fcfbfb;
+            text-align: center;
+        }
+        .movie-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .movie-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .rank {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .movie-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #333;
+        }
+        .movie-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        .movie-img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Top-list-3.0.html" class="back-button">&#8678; Back</a>
+
+    <!-- Introduction section -->
+    <div id="introduction">
+        <h1>Real-Time Hot Movies</h1>
+        <p>Explore the best movies of the year in our curated list.</p>
+    </div>
+
+    <!-- Movie list -->
+    <div class="movie-list">
+        <div class="movie-item">
+            <span class="rank">1.</span>
+            <img class="movie-img" src="images/坠落的审判.JPG" alt="坠落的审判">
+            <div class="movie-details">
+                <span class="movie-title">The Trial of Falling</span>
+                <span class="movie-info">(2023)</span>
+                <p>Sandra (Sandra Hüller), Samuel (Samuel Theis), and their visually impaired son Daniel (Milo Machado Graner) have been living in a remote mountainous area for a year. One day, Samuel is found dead outside the house, and the police immediately launch an investigation into the suspected homicide. In uncertain circumstances, Sandra is accused: was it suicide or murder? A year later, Daniel attends his mother's trial, which is also a real analysis of his parents' relationship.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">2.</span>
+            <img class="movie-img" src="images/你想活出怎样的人生.JPG" alt="你想活出怎样的人生">
+            <div class="movie-details">
+                <span class="movie-title">What Kind of Life Do You Want to Live</span>
+                <span class="movie-info">(2023)</span>
+                <p>After the death of his mother in a fire, young Makoto (voiced by Satoru Yamashii) forms a new family with his father Masaru (voiced by Takuya Kimura) and stepmother Natsuko (voiced by Kano Kimura). Suffering from grief, Makoto becomes gloomy and isolated, finding it difficult to adapt to the new environment. One day, he follows a talking heron (voiced by Masaki Suda) into an abandoned mysterious tower, only to enter the fantastical "world of the dead" and embark on an incredible adventure...</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">3.</span>
+            <img class="movie-img" src="images/周处除三害.JPG" alt="周处除三害">
+            <div class="movie-details">
+                <span class="movie-title">Zhou Chu Eliminates Three Evils</span>
+                <span class="movie-info">(2023)</span>
+                <p>Fugitive Chen Guilin (played by Ruan Jingtian) loses his last relative while hiding and learns that he has less than three months to live. Disheartened, he initially intends to surrender, but when he discovers that he is only ranked third among the three major fugitives, his heart suddenly stirs. After that, he decides to emulate the story of Zhou Chu eliminating three evils from ancient times and, in his dying moments, leave behind his legendary name in the martial world.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">4.</span>
+            <img class="movie-img" src="images/乘船而去.jpg" alt="乘船而去">
+            <div class="movie-details">
+                <span class="movie-title">Sailing Away</span>
+                <span class="movie-info">(2024)</span>
+                <p>Living alone in a rural area by the canal, elderly lady Zhou Jin (played by Ge Zhaomei) is suddenly diagnosed with a brain tumor. Her children, who are floating elsewhere, have to return home to take care of her. Eldest daughter Su Nianzhen (played by Liu Dan) runs a study abroad consulting agency in Shanghai and is going through her second divorce. She insists on giving her mother the best treatment; youngest son Su Nianqing (played by Wu Zhoukai) is a wandering tour guide who supports his mother to let go and accept impermanence. Faced with death, Zhou Jin seeks spiritual solace, while Su Nianzhen and Su Nianqing, while constantly discovering their mother's secrets, are losing their last connection with their hometown.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">5.</span>
+            <img class="movie-img" src="images/年少日记.jpg" alt="年少日记">
+            <div class="movie-details">
+                <span class="movie-title">Youth Diary</span>
+                <span class="movie-info">(2024)</span>
+                <p>An anonymous letter, a group of seemingly unharmed students, reminds high school teacher Sir Zheng (played by Lu Zhenye) of his violent and regrettable childhood. He also faces his wife's departure, his father's critical illness, and must find the classmate who attempted suicide to prevent tragedy from recurring.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">6.</span>
+            <img class="movie-img" src="images/白日之下.jpg" alt="白日之下">
+            <div class="movie-details">
+                <span class="movie-title">Under the Sun</span>
+                <span class="movie-info">(2024)</span>
+                <p>Based on true events, the film reveals the little-known truth about the abuses behind the news in a disabled nursing home called "Rainbow Bridge Home". When the news agency receives a tip about the abuse of inmates at the disabled nursing home "Rainbow Bridge Home", the investigative team, led by journalist Xiaoqi (played by Yu Xiangning), infiltrates the nursing home to expose the inhumane living conditions and seek the cruel truth under the sun.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">7.</span>
+            <img class="movie-img" src="images/第二十条.jpg" alt="第二十条">
+            <div class="movie-details">
+                <span class="movie-title">The Twentieth Article</span>
+                <span class="movie-info">(2024)</span>
+                <p>Prosecutor Han Ming (played by Lei Jiayin), who is in his middle age, has long lost his former sharpness and is concerned every day about quickly transitioning from a temporary position to a permanent one. During this period, in the case where villager Wang Yongqiang (played by Pan Binlong) stabbed village tyrant Liu Wenjing (played by Aruna) to protect his mute wife (played by Zhao Liying), the situation became heated. Liu's family members rallied gangsters and thugs to petition, demanding the death penalty for Wang. Han's first love, Prosecutor Lv Lingling (played by Gao Ye), withstands pressure from all sides and insists on finding crucial evidence related to the case. On the other hand, Han's son Han Yuchen (played by Liu Yaowen) injures the son of school director Zhang in order to stop campus bullying, and a tug-of-war ensues over whether an apology should be made.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">8.</span>
+            <img class="movie-img" src="images/间谍过家家.jpg" alt="间谍过家家">
+            <div class="movie-details">
+                <span class="movie-title">Spy Playing House</span>
+                <span class="movie-info">(2024)</span>
+                <p>The outstanding spy "Twilight" disguises himself as a psychiatrist Lloyd Forge, and forms a "disguised family" with Ania, a girl with telepathic abilities, and killer Joel, each with their own secrets. After experiencing a humorous family drama together, they embark on their first "family trip". However, on the pleasant journey, Ania discovers a "secret" that may shake world peace, and an unexpected major crisis strikes! Once again, the fate of the world is in the hands of this unexpectedly temporary family!</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">9.</span>
+            <img class="movie-img" src="images/飞驰人生2.jpg" alt="飞驰人生2">
+            <div class="movie-details">
+                <span class="movie-title">Speed Life 2</span>
+                <span class="movie-info">(2024)</span>
+                <p>Five years ago, in a desperate attempt at Bayanbrook, legendary racer Zhang Chi (played by Shen Teng) won the race but lost everything. Because he never found the lead seal, his results were canceled by the organizing committee, and he was slandered by malicious comments on the internet, impoverished and nameless. One day, a phone call reignites his passion as a racer. The elderly owner of the Le Car Factory (played by Jia Bing) is a fan of Zhang Chi. He actively proposes to sponsor Zhang Chi's team to compete in the last Bayanbrook. The factory worker Lei Xiaohai (played by Fan Chengcheng) is exceptionally talented. Under the joint training of Zhang Chi, Sun Yuqiang (played by Yin Zheng), Ji Xing (played by Zhang Benyu), and the perennially failing rookie driving school student Liu Xiande (played by Sun Yizhou), Xiaohai grows rapidly.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">10.</span>
+            <img class="movie-img" src="images/孤独地貌.jpg" alt="孤独地貌">
+            <div class="movie-details">
+                <span class="movie-title">Lonely Landscape</span>
+                <span class="movie-info">(2024)</span>
+                <p>An immersion into the rich landscapes of Sable Island and the life of Zoe Lucas, a naturalist and environmentalist who has lived over 40 years on this remote strip of sand.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
