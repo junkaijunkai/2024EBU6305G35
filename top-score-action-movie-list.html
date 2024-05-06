@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Score Action Movie List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        #introduction {
+            width: 800px;
+            height: 200px;
+            background-color: #040404;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #introduction h1 {
+            font-size: 24px;
+            color: #fdfbfb;
+            margin-bottom: 10px;
+        }
+        #introduction p {
+            font-size: 20px;
+            color: #fcfbfb;
+            text-align: center;
+        }
+        .movie-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .movie-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .rank {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .movie-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #333;
+        }
+        .movie-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        .movie-img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Top-list-3.0.html" class="back-button">&#8678; Back</a>
+
+    <!-- Introduction section -->
+    <div id="introduction">
+        <h1>Top Score Action Movie List</h1>
+        <p>Explore the best action movies.</p>
+    </div>
+
+    <!-- Movie list -->
+    <div class="movie-list">
+        <div class="movie-item">
+            <span class="rank">1.</span>
+            <img class="movie-img" src="images/蝙蝠侠黑暗骑士.jpg" alt="The Dark Knight Rises">
+            <div class="movie-details">
+                <span class="movie-title">The Dark Knight Rises</span>
+                <span class="movie-info">(2012)</span>
+                <p>
+                    Eight years after the death of District Attorney Harvey Dent, Gotham City has enjoyed a period of relative peace under the leadership of Commissioner Gordon. However, the emergence of the terrorist leader Bane brings Gotham to the brink of destruction. Bruce Wayne, who has been missing for years, must once again don the cape and cowl of Batman to save the city that has branded him an enemy.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">2.</span>
+            <img class="movie-img" src="images/谍影重重3.jpg" alt="The Bourne Ultimatum">
+            <div class="movie-details">
+                <span class="movie-title">The Bourne Ultimatum</span>
+                <span class="movie-info">(2007)</span>
+                <p>
+                    Jason Bourne continues his quest to find out who he is. In this installment of the Bourne series, Bourne travels to New York City, Moscow, Paris, and London to uncover the truth behind his identity and the conspiracy that surrounds him.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">3.</span>
+            <img class="movie-img" src="images/复仇者联盟4.jpg" alt="Avengers: Endgame">
+            <div class="movie-details">
+                <span class="movie-title">Avengers: Endgame</span>
+                <span class="movie-info">(2019)</span>
+                <p>
+                    After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">4.</span>
+            <img class="movie-img" src="images/疯狂的麦克斯4.jpg" alt="Mad Max: Fury Road">
+            <div class="movie-details">
+                <span class="movie-title">Mad Max: Fury Road</span>
+                <span class="movie-info">(2015)</span>
+                <p>
+                    In a post-apocalyptic wasteland, Max teams up with Imperator Furiosa to escape from a tyrannical warlord who controls the water supply. As they flee across the desert in a war rig, they encounter allies and enemies alike in a desperate bid for freedom.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">5.</span>
+            <img class="movie-img" src="images/谍影重重.jpg" alt="The Bourne Identity">
+            <div class="movie-details">
+                <span class="movie-title">The Bourne Identity</span>
+                <span class="movie-info">(2002)</span>
+                <p>
+                    A man is found floating in the Mediterranean Sea with no memory of his past. As he pieces together his identity, he discovers that he is skilled in combat and espionage. Pursued by unknown assailants, he must uncover the truth about his past while staying one step ahead of his enemies.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">6.</span>
+            <img class="movie-img" src="images/谍影重重2.jpg" alt="The Bourne Supremacy">
+            <div class="movie-details">
+                <span class="movie-title">The Bourne Supremacy</span>
+                <span class="movie-info">(2004)</span>
+                <p>
+                    Jason Bourne is framed for a botched CIA operation and must clear his name while evading capture. As he digs deeper into the conspiracy, he uncovers shocking truths about his past and the government's involvement in illegal activities.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">7.</span>
+            <img class="movie-img" src="images/变脸.jpg" alt="Face/Off">
+            <div class="movie-details">
+                <span class="movie-title">Face/Off</span>
+                <span class="movie-info">(1997)</span>
+                <p> 
+                    An FBI agent and a terrorist switch faces in a groundbreaking medical procedure. As they assume each other's identities, they engage in a deadly game of cat and mouse, each determined to destroy the other's life.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">8.</span>
+            <img class="movie-img" src="images/勇闯夺命岛.jpg" alt="The Rock">
+            <div class="movie-details">
+                <span class="movie-title">The Rock</span>
+                <span class="movie-info">(1996)</span>
+                <p>
+                    A group of rogue Marines take over Alcatraz Island and threaten to launch missiles at San Francisco. An FBI chemist and a former SAS captain are sent in to stop them, leading to a high-stakes battle for control of the island.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">9.</span>
+            <img class="movie-img" src="images/角斗士.jpg" alt="Gladiator">
+            <div class="movie-details">
+                <span class="movie-title">Gladiator</span>
+                <span class="movie-info">(2000)</span>
+                <p>
+                    After being betrayed and left for dead, a Roman general seeks revenge against the corrupt emperor who murdered his family and sent him into slavery. He rises through the ranks of the gladiatorial arena to challenge the emperor and restore honor to Rome.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">10.</span>
+            <img class="movie-img" src="images/碟中谍4.jpg" alt="Mission: Impossible - Ghost Protocol">
+            <div class="movie-details">
+                <span class="movie-title">Mission: Impossible - Ghost Protocol</span>
+                <span class="movie-info">(2011)</span>
+                <p>
+                    IMF agent Ethan Hunt and his team are blamed for a terrorist attack on the Kremlin and must go rogue to clear their names. With the help of a mysterious assassin, they uncover a plot to ignite a global nuclear war and must race against time to prevent disaster.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
