@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MovieHub - Viewing Preferences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            position: relative;
+        }
+
+        .home-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 34px;
+            font-weight: bold;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .return-button {
+            color: white;
+            border: none;
+            font-size: large;
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            margin-right: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .return-button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+
+
+
+        .algorithm-info {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .preference-contents {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+
+        }
+
+        .image-container {
+            margin: 20px auto;
+            /* 设置图像容器居中 */
+            width: 200px;
+            height: 200px;
+            background-image: url('images/personal/per.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <button class="return-button" id="return-button" onclick="location.href='personal.html'">
+            &#8678; Back
+        </button>
+        <h1>
+            <button class="home-button" onclick="location.href='HomePage.html';">
+                MovieHub
+            </button>
+        </h1>
+    </div>
+
+    <div class="algorithm-info">
+        <h2>Recommendation Algorithm</h2>
+        <p>Our recommendation algorithm takes into account your viewing preferences to suggest personalized movie
+            recommendations. By selecting your preferred genres, our algorithm will prioritize movies from those genres
+            in your recommendations.</p>
+        <p>Please note that the recommendations are based on your preferences and may not always match your exact taste.
+            We continually refine our algorithm to improve the recommendations.</p>
+    </div>
+    <div class="preference-contents">
+        <!-- 图像容器 -->
+        <div class="image-container"></div>
+
+        <form>
+            <h2>Viewing Preferences</h2>
+            <label>
+                <input type="checkbox" name="genre" value="action">
+                Action
+            </label>
+
+            <label>
+                <input type="checkbox" name="genre" value="comedy">
+                Comedy
+            </label>
+
+            <label>
+                <input type="checkbox" name="genre" value="drama">
+                Drama
+            </label>
+
+            <label>
+                <input type="checkbox" name="genre" value="horror">
+                Horror
+            </label>
+
+            <label>
+                <input type="checkbox" name="genre" value="romance">
+                Romance
+            </label>
+
+            <input type="submit" value="Save Preferences">
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 MovieHub.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        #introduction {
+            width: 800px;
+            height: 200px;
+            background-color: #040404;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #introduction h1 {
+            font-size: 24px;
+            color: #fdfbfb;
+            margin-bottom: 10px;
+        }
+        #introduction p {
+            font-size: 20px;
+            color: #fcfbfb;
+            text-align: center;
+        }
+        .movie-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .movie-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .rank {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .movie-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #333;
+        }
+        .movie-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        .movie-img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        footer {
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Top-list-3.0.html" class="back-button">&#8678; Back</a>
+
+    <!-- Introduction section -->
+    <div id="introduction">
+        <h1>TV Shows</h1>
+        <p>Explore the latest popular dramas.</p>
+    </div>
+
+    
+   <!-- Movie list -->
+   <div class="movie-list">
+    <div class="movie-item">
+        <span class="rank">1.</span>
+        <img class="movie-img" src="images/top-list/不够善良.jpg" alt="We're Not Good Enough">
+        <div class="movie-details">
+            <span class="movie-title">We're Not Good Enough</span>
+            <span class="movie-info">(2024)</span>
+            <p>The story unfolds from an accidental encounter, where two individuals, born on the same day of the same month, not only fall in love with the same man but also frequently buy the same clothes. Once rivals in love during their youth, they spend ten years tracking each other's traces on Facebook, fantasizing about each other's well-being, only to unexpectedly reunite.</p>
+        </div>
+    </div>
+    <div class="movie-item">
+        <span class="rank">2.</span>
+        <img class="movie-img" src="images/top-list/婚后事.jpg" alt="After Marriage">
+        <div class="movie-details">
+            <span class="movie-title">After Marriage</span>
+            <span class="movie-info">(2024)</span>
+            <p>This series about love and marriage features one to two narrators per episode, constantly overturning and repositioning the understanding of characters and events through switching narrators, perspectives, and time. This highlights that the world of love has always been like a maze, with multiple versions, leaving those involved puzzled. The series is divided into four parts: divorce, infidelity, mistaken love, and restoration, exploring the situations or doubts each person has experienced: What is love? Why get married? Why cheat? Why divorce? Why seek revenge? How to let go? How to recover? How to stay together until old age? Perhaps, only by daring to confront the ugliness, darkness, and brokenness of human nature can one have a chance to mend a fractured relationship.</p>
+        </div>
+    </div>
+    <div class="movie-item">
+        <span class="rank">3.</span>
+        <img class="movie-img" src="images/top-list/雷普利.jpg" alt="Ripley">
+        <div class="movie-details">
+            <span class="movie-title">Ripley</span>
+            <span class="movie-info">(2024)</span>
+            <p>Tom Ripley is a con artist barely making ends meet in New York City in the early 1960s. A wealthy man hires him to persuade his wandering son to return home from Italy. Tom accepts the job, taking his first step into the complex life of deception, fraud, and murder. This limited series is adapted from Patricia Highsmith's bestselling novel "Tom Ripley".</p>
+        </div>
+    </div>
+    
+    <div class="movie-item">
+        <span class="rank">4.</span>
+        <img class="movie-img" src="images/top-list/做饭的女人.jpg" alt="The Woman Who Wants to Cook and the Woman Who Wants to Eat">
+        <div class="movie-details">
+            <span class="movie-title">The Woman Who Wants to Cook and the Woman Who Wants to Eat</span>
+            <span class="movie-info">(2024)</span>
+            <p>It has been announced that NHK's drama "Women Who Want to Cook and Women Who Want to Eat" starring Miho Kawai will produce a sequel! Kei Nishino continues to participate, with a total of 20 episodes scheduled to air every Monday through Thursday at 10:45 p.m. in early 2024. The drama tells the daily life and interactions between Yuki Nomoto (Miho Kawai), a woman who loves to cook, and Tozuko Kasuga (Kei Nishino), a woman who loves to eat. The script continues to be written by Yuri Yamada.</p>
+        </div>
+    </div>
+
+    <div class="movie-item">
+        <span class="rank">5.</span>
+        <img class="movie-img" src="images/top-list/关于未知的我们.jpg" alt="About Us Unknown">
+        <div class="movie-details">
+            <span class="movie-title">About Us Unknown</span>
+            <span class="movie-info">(2024)</span>
+            <p>Wei Qian (Qiu Yuchen), orphaned at a young age, shoulders the responsibility of supporting the family, raising his younger sister Wei Lili (Lin Sitin) besides himself, and unexpectedly adopts his younger brother Wei Zhiyuan (Huang Hongxuan). For the sake of his siblings, Wei Qian works tirelessly to earn money, and fortunately, his childhood friend San Pang (Kim Jae-hoon) pulls him back on track. As life gradually improves, Xiao Yuan confesses that he is in love with his brother and even kisses Wei Qian forcefully. Out of anger, Wei Qian sends Xiao Yuan abroad, only to realize that something seems to be missing in his heart. Will the two, who are not related by blood, end up as family, brothers, or will they be able to cross that forbidden line and become lovers?</p>
+        </div>
+    </div>
+
+    <div class="movie-item">
+        <span class="rank">6.</span>
+        <img class="movie-img" src="images/top-list/美食向导.jpg" alt="My Food Guide">
+        <div class="movie-details">
+            <span class="movie-title">My Food Guide</span>
+            <span class="movie-info">(2024)</span>
+            <p>This program sees director Chen Xiaoqing stepping from behind the camera to in front of it, exploring food from his own perspective and delving into the stories behind it. In this show, Chen Xiaoqing travels to eight different regions of China, embarking on a flavorful exploration journey with different guides. Among these guides are Chen Xiaoqing's old friends as well as new acquaintances. They come from diverse backgrounds, including philosophers, archaeologists, anthropologists, musicians, professional chefs, economists, and writers. Chen Xiaoqing brings more people together through food; he believes, "Food is not only delicious, but also a kind of adhesive that enables people to have more understanding and communication."</p>
+        </div>
+    </div>
+
+    <div class="movie-item">
+        <span class="rank">7.</span>
+        <img class="movie-img" src="images/top-list/谢谢你温暖我.jpg" alt="Thank You for Warming Me Up">
+        <div class="movie-details">
+            <span class="movie-title">Thank You for Warming Me Up</span>
+            <span class="movie-info">(2024)</span>
+            <p>Lin Tuo (Lin Yi), in the prime of his life, meets An Zhijue (Li Landi) at a summer internship recruitment event during their junior year. They fall in love at first sight and after getting to
+                know each other better, they start a relationship. As graduation season approaches, the two embark on their journey from the ivory tower to society, working part-time jobs, attending interviews, and planning for the future together. Although the journey of life does not proceed smoothly, with encouragement from each other, they gradually get back on track. However, just when everything seems to be going smoothly, Lin Tuo is diagnosed with amyotrophic lateral sclerosis, commonly known as ALS. ALS puts an end to Lin Tuo's seemingly ordinary yet hopeful life. Though his life is shortened, Lin Tuo bravely challenges the disease, supported by the warmth and love of his family, lover, friends, and colleagues. Lin Tuo's companions and fellow patients are also inspired by him, reexamining their attitudes toward life, learning to cherish the present moment, and deciding to live each day with no regrets, full of hope.</p>
+                </div>
+            </div>   
+    <div class="movie-item">
+                <span class="rank">8.</span>
+                <img class="movie-img" src="images/top-list/辐射.jpg" alt="Radiation Season 1">
+                <div class="movie-details">
+                    <span class="movie-title">Radiation Season 1</span>
+                    <span class="movie-info">(2024)</span>
+                    <p>"Fall Out" is adapted from one of the greatest video game series of all time, telling the story of rich and poor in a world almost devoid of everything. 200 years after the apocalypse, a peaceful resident from a comfortable radiation shelter is forced to return to the surface, only to be shocked by the wasteland that awaits her.</p>
+                </div>
+            </div>
+        
+            <div class="movie-item">
+                <span class="rank">9.</span>
+                <img class="movie-img" src="images/top-list/群星.jpg" alt="Stars">
+                <div class="movie-details">
+                    <span class="movie-title">Stars</span>
+                    <span class="movie-info">(2024)</span>
+                    <p>After a space disaster, Jo (Noomi Rapace) returns to Earth, only to find that key parts of her life seem to be missing. Meanwhile, Henry (Jonathan Banks), a Nobel Prize-winning physicist, has answers to her secret discoveries, kept confidential on the International Space Station until her return.</p>
+                </div>
+            </div>
+        
+            <div class="movie-item">
+                <span class="rank">10.</span>
+                <img class="movie-img" src="images/top-list/背着善宰跑.jpg" alt="Carrying Sun Zai on My Back">
+                <div class="movie-details">
+                    <span class="movie-title">Carrying Sun Zai on My Back</span>
+                    <span class="movie-info">(2024)</span>
+                    <p>Adapted from the online novel "Tomorrow's First" by Jin Bread, it tells the story of the top star's passionate fans reversing time to save his tragic end of life. In the brilliant era, two young people who meet again overcome the fate of a fantastic romantic comedy.</p>
+                </div>
+            </div>
+        
+        </div>
+        <footer>
+            <p>© 2024 MovieHub.</p>
+        </footer>
+    </body>
+    </html>

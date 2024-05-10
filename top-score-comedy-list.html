@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Score Comedy List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        #introduction {
+            width: 800px;
+            height: 200px;
+            background-color: #040404;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #introduction h1 {
+            font-size: 24px;
+            color: #fdfbfb;
+            margin-bottom: 10px;
+        }
+        #introduction p {
+            font-size: 20px;
+            color: #fcfbfb;
+            text-align: center;
+        }
+        .movie-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .movie-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .rank {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .movie-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #333;
+        }
+        .movie-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        .movie-img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        footer {
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Top-list-3.0.html" class="back-button">&#8678; Back</a>
+
+    <!-- Introduction section -->
+    <div id="introduction">
+        <h1>Top Score Comedy List</h1>
+        <p>Explore the best comedies.</p>
+    </div>
+
+    <!-- Movie list -->
+    <div class="movie-list">
+        <div class="movie-item">
+            <span class="rank">1.</span>
+            <img class="movie-img" src="images/top-list/三傻.jpg" alt="Three Idiots">
+            <div class="movie-details">
+                <span class="movie-title">Three Idiots</span>
+                <span class="movie-info">(2009)</span>
+                <p>
+                    This film is based on the debut novel "Five Point Someone" by Indian best-selling author Chetan Bhagat. Fran (Madhavan), Radu (Sharman Joshi), and Rancho (Aamir Khan) are students at the Royal Engineering College, roommates, and best friends. In a strict college environment, Rancho stands out as a very different student. He challenges the teaching methods of the principal, Virus (Boman Irani), openly. Rancho not only encourages Fran and Radu to bravely pursue their dreams but also persuades the principal's second daughter, Pia (Kareena Kapoor), to leave her copper-smelling fiancé. Rancho's unconventional approach leads to conflicts with model student "Silencer" (Omi Vaidya) and a pact to meet ten years later to determine whose lifestyle is more successful.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">2.</span>
+            <img class="movie-img" src="images/top-list/大话西游之月光宝盒.jpg" alt="A Chinese Odyssey">
+            <div class="movie-details">
+                <span class="movie-title">A Chinese Odyssey</span>
+                <span class="movie-info">(1995)</span>
+                <p>
+                    Sun Wukong (Stephen Chow) escorts Tang Sanzang (Law Kar-ying) to the West to obtain scriptures. On the way, they conspire with the Bull Demon King to kill Tang Sanzang and steal the Moonlight Box. This action incurs the wrath of Guanyin, who plans to eliminate them. Sun Wukong is reincarnated as a bandit leader, King Bully. When he encounters the spider demon Spring (Yammie Nam) and the skeleton demon White Bone (Karen Mok), King Bully falls in love with White Bone at first sight due to a romantic history they share. However, their love faces obstacles when the ancient sage informs King Bully of their true identities. Amidst comedic adventures, the story unfolds with twists and turns.</p>
+            </div>
+        </div>
+        <!-- More movie items... -->
+        <div class="movie-item">
+            <span class="rank">3.</span>
+            <img class="movie-img" src="images/top-list/两杆大烟枪.jpg" alt="Locks, Stock and Two Smoking Barrels">
+            <div class="movie-details">
+                <span class="movie-title">Locks, Stock and Two Smoking Barrels</span>
+                <span class="movie-info">(1998)</span>
+                <p>
+                    Eddie (Nick Moran) is quick-witted and a skilled card player. With the support of his three friends, Eddie joins a high-stakes poker game hosted by the underworld, only to fall into a trap and accumulate a £500,000 gambling debt. To repay the debt, Eddie and his friends come up with various schemes, eventually scheming against a group of drug dealers and acquiring two antique shotguns for the robbery. However, the same day, the drug dealers, eager for their money, also carry out a robbery. In a series of comedic events, the story unfolds, intertwining the lives of small-time crooks and big-time players.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">4.</span>
+            <img class="movie-img" src="images/top-list/摩登时代.jpg" alt="Modern Times">
+            <div class="movie-details">
+                <span class="movie-title">Modern Times</span>
+                <span class="movie-info">(1936)</span>
+                <p>
+                    The United States in the 1920s faces economic depression, high unemployment rates, and exploitation of workers, who become mere cogs in the machinery of large-scale production. Charlie (Charlie Chaplin) is one such downtrodden citizen, working tirelessly in a noisy factory to earn a meager income. The repetitive and exhausting work leaves him breathless, leading to absurd situations where he tightens people's noses as if they were screws and gets entangled in the machinery. Despite his poverty, Charlie is kind-hearted. He saves a homeless girl and lives with her, creating a modest but cozy home. Each time penniless Charlie seeks food, he intentionally commits petty crimes to enter jail for a meal. Things seem to improve momentarily when the homeless girl becomes a star, but the happiness is short-lived.</p>
+            </div>
+        </div>
+        <!-- More movie items... -->
+        <div class="movie-item">
+            <span class="rank">5.</span>
+            <img class="movie-img" src="images/top-list/让子弹飞.jpg" alt="Let the Bullets Fly">
+            <div class="movie-details">
+                <span class="movie-title">Let the Bullets Fly</span>
+                <span class="movie-info">(2010)</span>
+                <p>
+                    During the Republic of China era, Bandit "Pocky" Zhang (Jiang Wen) and his gang ambush a convoy, resulting in the deaths of all but two passengers: a fake mayor Ma Bangde (Ge You) and his wife. To survive, Ma pretends to be the mayor and gets entangled in local politics. Upon arrival in Goose Town, Ma clashes with local crime lord Huang Silang (Chow Yun-fat). As schemes and conflicts unfold, Ma's original intention of making money becomes entwined with power struggles and moral dilemmas.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">6.</span>
+            <img class="movie-img" src="images/top-list/低俗小说.jpg" alt="Pulp Fiction">
+            <div class="movie-details">
+                <span class="movie-title">Pulp Fiction</span>
+                <span class="movie-info">(1994)</span>
+                <p>
+                    "Pulp Fiction" consists of three interrelated stories: "Vincent Vega and Marsellus Wallace's Wife," "The Gold Watch," and "The Bonnie Situation," along with the prologue and epilogue. Although seemingly independent, these stories are intricately connected.
+                   In one story, thieves "Pumpkin" and "Honey Bunny" attempt to rob a diner but encounter unexpected challenges when hitmen Jules (Samuel L. Jackson) and Vincent (John Travolta) happen to be dining there. Will the hitmen spare the two robbers?
+                   Vincent, a henchman for crime boss Marsellus Wallace (Ving Rhames), is tasked with escorting Marsellus' wife for a night. Despite knowing the dire consequences, Vincent faces temptation from Marsellus' wife, Mia.
+                   Vincent's story continues when boxer Butch (Bruce Willis) enters the scene, altering his life forever. Butch possesses a family heirloom, a gold watch, which leads to a shameful secret shared between him and Marsellus due to the watch.</p>
+            </div>
+        </div>
+        <!-- More movie items... -->
+        <div class="movie-item">
+            <span class="rank">7.</span>
+            <img class="movie-img" src="images/top-list/阳光姐妹淘.jpg" alt="Sunny">
+            <div class="movie-details">
+                <span class="movie-title">Sunny</span>
+                <span class="movie-info">(2011)</span>
+                <p> 
+                    Twenty-five years ago, high school student Na-mi (Shim Eun-kyung) and her family moved from Jeolla Province to Seoul. Na-mi enrolled in Jungbu Girls' High School and, due to her strong dialect, was timid about speaking up. Luckily, she received protection from her classmate Chun-hwa (Kang So-ra), who became her big sister figure. Together with Chun-hwa, Na-mi befriended a group of classmates, including Jin-hee, who was obsessed with double eyelids, Jin-hee's foul-mouthed friend Geum-ok, aspiring writer Jin-joo, beauty pageant hopeful Bok-hee, and the silent and aloof Su-ji. After a confrontation with a gang of delinquent girls, Na-mi and her friends formed the "Sunny" group...
+                    Many years later, housewife Na-mi accidentally reunites with Chun-hwa, who is hospitalized with a terminal illness. Chun-hwa hopes to reunite with the members of "Sunny" in her final two months of life. Na-mi reaches out to Jin-hee, and together they hire a private investigator to find their former companions. As memories of youth resurface with each familiar name they find.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">8.</span>
+            <img class="movie-img" src="images/top-list/喜剧之王.jpg" alt="King of Comedy">
+            <div class="movie-details">
+                <span class="movie-title">King of Comedy</span>
+                <span class="movie-info">(1999)</span>
+                <p>
+                    Yip (Stephen Chow) is passionate about drama and dreams of becoming an actor. Besides playing bit parts, he also runs an acting class in a neighborhood welfare center. At this time, nightclub dancer Miu (Cecilia Cheung), accompanied by her mother, comes to learn acting here. Miu had an extremely unpleasant experience. In the process of being instructed by Yip, Miu develops feelings for him. Meanwhile, she becomes a popular dancer at the nightclub. Yip, who receives many cold looks, finally gains the appreciation of the famous actress Shan (Karen Mok), who helps him play the leading role in a new play. However, his role is replaced unexpectedly, leaving him disappointed. When an undercover cop (Ng Man-tat) who works at the scene is exposed, Yip inadvertently helps solve the case. After that, Yip continues to be active in the neighborhood welfare center's acting class.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">9.</span>
+            <img class="movie-img" src="images/top-list/幸福终点站.jpg" alt="The Terminal">
+            <div class="movie-details">
+                <span class="movie-title">The Terminal</span>
+                <span class="movie-info">(2004)</span>
+                <p>
+                    Victor Navorski (Tom Hanks) travels from his home country to the United States to fulfill his father's wish. However, upon arrival at Kennedy Airport, he faces a dramatic turn of events: he is informed of a coup in his homeland, rendering his passport and visa invalid. Victor finds himself stranded at the airport, awaiting the processing of new documents.
+                    For nine months, he lives at the airport, using its facilities for hygiene and sleeping in the waiting area. Victor learns to adapt and survives by working odd jobs at the airport. However, his unkempt appearance draws the disapproval of airport official Frank Dixon (Stanley Tucci). To Dixon's chagrin, flight attendant Amelia (Catherine Zeta-Jones) falls in love with Victor. Amidst the sweetness of their relationship, Victor observes the diverse lives unfolding at the airport, finding solace in his circumstances.</p>
+            </div>
+        </div>
+        <div class="movie-item">
+            <span class="rank">10.</span>
+            <img class="movie-img" src="images/top-list/东成西就.jpg" alt="The Eagle Shooting Heroes">
+            <div class="movie-details">
+                <span class="movie-title">The Eagle Shooting Heroes</span>
+                <span class="movie-info">(1993)</span>
+                <p>
+                    Queen of Golden Wheel and her cousin Gold Lion decide to seize the country by marrying and killing her cousin and his father right after. However, Gold Lion is unable to locate the Jade Token and instead kills the Jade Warlord’s son. He begs the Jade Warlord to kill his brother for revenge. The Jade Warlord, angry at the death of his son, kills him instead and searches for his brother to seek revenge. He bumps into his disciple White-browed Hermit (played by Tony Leung) and his younger sister (played by Brigitte Lin), who is being chased by Gold Lion. The Jade Warlord follows the White-browed Hermit to a temple to investigate the Jade Token. Meanwhile, the Prince of Dali and his follower come across a real Peach Blossom Sprite who takes them to another dimension. In the end, everyone is connected in this tale of love and betrayal.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 MovieHub.</p>
+    </footer>
+</body>
+</html>
+
+
