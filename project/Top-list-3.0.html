@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-list | MovieHub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*font-family: Arial, sans-serif;
+            /*background-color: #ececec;*/
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            position: relative;
+        }
+
+        .home-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 34px;
+            font-weight: bold;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .top-tab {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .tab-link {
+            cursor: pointer;
+            text-align: center;
+            color: #333;
+            width: 150px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .tab-link:hover {
+            background-color: #eee;
+            /*transform: scale(1.1);*/
+        }
+
+        .tab-link.active {
+            color: black;
+            border-bottom: 2px solid black;
+        }
+
+        .content-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            /* Adjust the max-width to fit your design */
+            margin: auto;
+        }
+
+        .content-block {
+            width: calc(33.333% - 20px);
+            /* Subtract margin */
+            height: fit-content;
+            margin-bottom: 30px;
+            /* Space between rows */
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .content-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-block-title {
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0;
+
+
+        }
+
+        .content-block:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Ensure that there are no margins on the sides of the first and last blocks */
+        .content-block:nth-child(3n+1) {
+            margin-left: 0;
+        }
+
+        .content-block:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <button class="home-button" onclick="location.href='HomePage.html';">
+                MovieHub
+            </button>
+        </h1>
+        <!--<button class="menu-button" id="menu-button">Menu</button>-->
+    </div>
+    <div class="top-tab">
+        <a href="HomePage.html" class="tab-link">Home</a>
+        <a href="Top-list-3.0.html" class="tab-link active">Top-list</a>
+        <a href="forum.html" class="tab-link">Forum</a>
+        <a href="personal.html" class="tab-link">Personal</a>
+    </div>
+    <div class="content-area">
+        <div class="content-area">
+            <!-- Content blocks with images and titles -->
+            <a href="real-time-hot-movies.html" class="content-block">
+                <img src="images/top-list/坠落.jpg" alt="Real-Time Hot Movies">
+                <div class="content-block-title">Real-Time Hot Movies</div>
+            </a>
+            <a href="tv-shows.html" class="content-block">
+                <img src="images/top-list/不够善良的我们.jpg" alt="TV Shows">
+                <div class="content-block-title">TV Shows</div>
+            </a>
+            <a href="all-time-movie-rankings.html" class="content-block">
+                <img src="images/top-list/肖申克.jpg" alt="All-Time Movie Rankings">
+                <div class="content-block-title">All-Time Movie Rankings</div>
+            </a>
+
+            <a href="top-score-comedy-list.html" class="content-block">
+                <img src="images/top-list/大话西游.jpg" alt="Top Score Comedy List">
+                <div class="content-block-title">Top Score Comedy List</div>
+            </a>
+            <a href="top-score-action-movie-list.html" class="content-block">
+                <img src="images/top-list/蝙蝠侠.jpg" alt="Top Score Action Movie List">
+                <div class="content-block-title">Top Score Action Movie List</div>
+            </a>
+            <a href="top-score-romantic-movie-list.html" class="content-block">
+                <img src="images/top-list/泰坦尼克.jpg" alt="Top Score Romantic Movie List">
+                <div class="content-block-title">Top Score Romantic Movie List</div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 MovieHub.</p>
+    </footer>
+</body>
+
+</html>

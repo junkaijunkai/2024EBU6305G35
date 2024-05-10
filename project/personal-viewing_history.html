@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MovieHub - Viewing History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            position: relative;
+        }
+
+        .home-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 34px;
+            font-weight: bold;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .return-button {
+            color: white;
+            border: none;
+            font-size: large;
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            margin-right: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .return-button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        caption {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .stats {
+            font-size: 14px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .stats h2 {
+            padding-left: 10px;
+        }
+
+        .stats p {
+            padding-left: 10px;
+        }
+
+        .poster-container {
+            position: relative;
+        }
+
+        .poster {
+            height: 300px;
+            width: 100%;
+
+        }
+
+        .poster-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+
+        .poster-overlay:hover {
+            opacity: 1;
+        }
+
+        .poster-overlay p {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <button class="return-button" id="return-button" onclick="location.href='personal.html'">
+            &#8678; Back
+        </button>
+        <h1>
+            <button class="home-button" onclick="location.href='HomePage.html';">
+                MovieHub
+            </button>
+        </h1>
+    </div>
+    <div class="content">
+        <table>
+            <caption>Viewing History</caption>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Movie Title</th>
+                    <th>Duration</th>
+                    <th>Poster</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-05-15</td>
+                    <td>The Shawshank Redemption</td>
+                    <td>142 min</td>
+                    <td>
+                        <div class="poster-container">
+                            <img class="poster" src="images/personal/shawshank.png" alt="The Shawshank Redemption">
+                            <div class="poster-overlay">
+                                <p>The Shawshank Redemption</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2023-05-14</td>
+                    <td>Pulp Fiction</td>
+                    <td>154 min</td>
+                    <td>
+                        <div class="poster-container">
+                            <img class="poster" src="images/personal/pulp.png" alt="Pulp Fiction">
+                            <div class="poster-overlay">
+                                <p>Pulp Fiction</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2023-05-13</td>
+                    <td>Inception</td>
+                    <td>148 min</td>
+                    <td>
+                        <div class="poster-container">
+                            <img class="poster" src="images/personal/inception.png" alt="Inception">
+                            <div class="poster-overlay">
+                                <p>Inception</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 添加更多的观影历史记录 -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="stats">
+        <h2>Viewing Statistics</h2>
+        <p>Total Movies Watched: <strong>3</strong></p>
+        <p>Total Duration: <strong>444 min</strong></p>
+        <p>Average Duration per Movie: <strong>148 min</strong></p>
+    </div>
+    <footer>
+        <p>© 2024 MovieHub.</p>
+    </footer>
+
+</body>
+
+</html>
